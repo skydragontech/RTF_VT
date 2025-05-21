@@ -1,0 +1,11 @@
+Model Information:
+* title:	Caminhão Volvo FH 750
+* source:	https://sketchfab.com/3d-models/caminhao-volvo-fh-750-314f957331344efcb574b35da7bba99f
+* author:	Matheus.Molina (https://sketchfab.com/Matheus.Molina)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Caminhão Volvo FH 750" (https://sketchfab.com/3d-models/caminhao-volvo-fh-750-314f957331344efcb574b35da7bba99f) by Matheus.Molina (https://sketchfab.com/Matheus.Molina) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
