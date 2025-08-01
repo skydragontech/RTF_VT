@@ -26,22 +26,22 @@ function CarShow({cameraPos, ambientOn, color, lightsOn}) {
                 makeDefault fov={45}
                 position={cameraPos}
             />
-            {/*<directionalLight*/}
-            {/*    position={[-5, 5, 5]}*/}
-            {/*    intensity={mainLightIntensity}*/}
-            {/*    castShadow={true}*/}
-            {/*    shadow-mapSize-width={2048}*/}
-            {/*    shadow-mapSize-height={2048}*/}
-            {/*    shadow-camera-left={-10}*/}
-            {/*    shadow-camera-right={10}*/}
-            {/*    shadow-camera-top={10}*/}
-            {/*    shadow-camera-bottom={-10}*/}
-            {/*    shadow-camera-near={0.5}*/}
-            {/*    shadow-camera-far={50}*/}
-            {/*/>*/}
-            {/*<directionalLight position={[0, 0.5, 2]} intensity={0.5}/>*/}
-            {/*<directionalLight position={[-2, 0.5, 0]} intensity={0.5}/>*/}
-            {/*<directionalLight position={[2, 0.5, 0]} intensity={0.5}/>*/}
+            <directionalLight
+                position={[-5, 5, 5]}
+                intensity={mainLightIntensity}
+                castShadow={true}
+                shadow-mapSize-width={2048}
+                shadow-mapSize-height={2048}
+                shadow-camera-left={-10}
+                shadow-camera-right={10}
+                shadow-camera-top={10}
+                shadow-camera-bottom={-10}
+                shadow-camera-near={0.5}
+                shadow-camera-far={50}
+            />
+            <directionalLight position={[0, 0.5, 2]} intensity={0.5}/>
+            <directionalLight position={[-2, 0.5, 0]} intensity={0.5}/>
+            <directionalLight position={[2, 0.5, 0]} intensity={0.5}/>
             <color args={[0.1, 0.1, 0.1]} attach="background"/>
             <Truck color={color} lightsOn={lightsOn}/>
             <Ground/>
