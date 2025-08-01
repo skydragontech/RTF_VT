@@ -7,7 +7,7 @@ import {Ground} from "./Ground";
 import {Truck} from "./Truck";
 import ColorDock from "./ColorDock";
 
-function CarShow({cameraPos, ambientOn, color}) {
+function CarShow({cameraPos, ambientOn, color, lightsOn}) {
     const {ambientIntensity, mainLightIntensity} = useControls({
         ambientIntensity: {value: 1.2, min: 0, max: 5, step: 0.1},
         mainLightIntensity: {value: 3, min: 0, max: 10, step: 0.1},
@@ -43,22 +43,23 @@ function CarShow({cameraPos, ambientOn, color}) {
             <directionalLight position={[-2, 0.5, 0]} intensity={0.5}/>
             <directionalLight position={[2, 0.5, 0]} intensity={0.5}/>
             <color args={[0.1, 0.1, 0.1]} attach="background"/>
-            <Truck color={color}/>
+            <Truck color={color} lightsOn={lightsOn}/>
             <Ground/>
         </>
     );
 }
 
 function App() {
-    const [activeIndex, setActiveIndex] = useState(null);
     const defaultCamera = [0, 5, 10];
     const [cameraPos, setCameraPos] = useState(defaultCamera);
     const [ambientOn, setAmbientOn] = useState(true);
     const [color, setColor] = useState('#487C1C');
+    const [lightsOn, setLightsOn] = useState(false);
     useControls({
         "Reset Camera": button(() => {
             setCameraPos([0, 5, 10 + Math.random() * 0.01]);
         }),
+        "Light Switch": button(() => setLightsOn(l => !l)),
         "Toggle Ambient": button(() => setAmbientOn(a => !a)),
         "color": {
             value: color,
@@ -73,7 +74,7 @@ function App() {
     return (
         <Suspense fallback={null}>
             <Canvas shadows>
-                <CarShow cameraPos={cameraPos} ambientOn={ambientOn} color={color}/>
+                <CarShow cameraPos={cameraPos} ambientOn={ambientOn} color={color} lightsOn={lightsOn}/>
                 <gridHelper args={[10]}/>
                 <axesHelper args={[5]}/>
             </Canvas>

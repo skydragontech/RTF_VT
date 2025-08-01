@@ -45,8 +45,8 @@ html, body, #root, canvas {
 }
 
 .p-dock .p-dock-item-container {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 2rem;
+    height: 2rem;
     margin: 0.15rem 0.15rem;
     position: relative;
     align-items: center;
@@ -55,8 +55,8 @@ html, body, #root, canvas {
 }
 
 .dock-color-pie {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,8 +72,8 @@ html, body, #root, canvas {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 50%;
     box-shadow: 0 0 0 1px #fff;
     transform: translate(-50%, -50%);
