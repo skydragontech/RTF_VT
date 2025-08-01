@@ -44,7 +44,7 @@ export default function ColorDock({
                         style={
                             i === 0
                                 ? {
-                                    background: `${color} url(https://gamemcu.com/su7/1.0.5/icon/custom.webp) center/100% no-repeat`,
+                                    background: `${color}` //url(https://gamemcu.com/su7/1.0.5/icon/custom.webp) center/100% no-repeat`,
                                 }
                                 : {
                                     background: gradients[i % gradients.length],
